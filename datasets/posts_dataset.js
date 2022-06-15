@@ -1,4 +1,4 @@
-const posts = [
+module.exports = [
     {
       username: "John",
       title: "Post 1",
@@ -9,4 +9,3 @@ const posts = [
     },
   ];
 
-  module.exports = posts;

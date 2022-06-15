@@ -1,5 +1,5 @@
 GET http://localhost:3001/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2luYSIsImlhdCI6MTY1NTI5NDQ1NCwiZXhwIjoxNjU1Mjk0NDg0fQ.rgqb9crJ2D6Y10TXucMsQSBld872HTC2T999tFCp9BI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2luYSIsImlhdCI6MTY1NTMwMTE4MywiZXhwIjoxNjU1MzAxMjEzfQ.uuQsjK4K8GGWCge3zDcYihIIj2-8o_fnfHnYAGE3PX0
 
 ###
 
@@ -15,5 +15,5 @@ POST http://localhost:4000/token
 Content-Type: application/json
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2luYSIsImlhdCI6MTY1NTI5NDQ0MSwiZXhwIjoxNjU1Mjk4MDQxfQ.AJGhiCeHCaZQjKz4FIjnsUO5e2zGCKPcrm_Ypenwn0A"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2luYSIsImlhdCI6MTY1NTMwMTE4MywiZXhwIjoxNjU1MzA0NzgzfQ.HjtS4mUpIGGeQlEBI2mN3gTQk2zaYsak_RkgpqyzFhM"
 }

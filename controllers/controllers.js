@@ -2,7 +2,7 @@
 require('dotenv').config();
 
 // initialise our posts dataset
-const posts = require('../datasets/posts_dataset.js');
+const posts = require('../datasets/posts_dataset');
 
 //import generate Token
 const generateToken = require('../middlewares/generateToken');
@@ -14,6 +14,7 @@ const generateToken = require('../middlewares/generateToken');
  * @access: Private
  */
 function getPosts(req, res){
+    console.log(posts);
     res.json(posts.filter(post => post.username === req.user.name));
 }
 
@@ -30,7 +31,7 @@ function login(req, res){
     const user = {
       name: username,
     };
-    const accessToken = generateToken(user, process.env.REFRESH_SECRET, '30s');
+    const accessToken = generateToken(user, process.env.ACCESS_SECRET, '30s');
     const refreshToken = generateToken(user, process.env.REFRESH_SECRET, '3600s');
     res.json({
       accessToken,
